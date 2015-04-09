@@ -1,4 +1,9 @@
 #include "stdafx.h"
 
 int g_cudaDeviceCount;
-HWND g_hWnd;
+
+// GDI UI
+
+UIMan	g_uiMan;
+float	g_loadprogress;
+float	g_demuxprogress;

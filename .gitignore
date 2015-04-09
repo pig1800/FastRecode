@@ -1,0 +1,13 @@
+binary/FastRecode.exe
+binary/FastRecode.ilk
+*.pdb
+*.tlog
+*.ipch
+*.obj
+*.idb
+FastRecode.sdf
+*.pch
+FastRecode.v12.suo
+*.log
+FastRecode.vcxproj.user
+*.exe

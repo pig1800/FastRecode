@@ -73,8 +73,8 @@
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(CUDA_PATH)\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(CUDA_PATH)\lib\x64;$(LibraryPath)</LibraryPath>
-    <OutDir>$(SolutionDir)binary</OutDir>
-    <IntDir>$(SolutionDir)obj</IntDir>
+    <OutDir>$(SolutionDir)binary\</OutDir>
+    <IntDir>$(SolutionDir)obj\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -142,16 +142,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="source\commonfunc.cpp" />
     <ClCompile Include="source\gvariables.cpp" />
     <ClCompile Include="source\stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Source\UIMan.cpp" />
     <ClCompile Include="source\WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="source\commonfunc.h" />
+    <ClInclude Include="Source\datatypes.h" />
     <ClInclude Include="source\gvariables.h" />
     <ClInclude Include="source\linkinglibraries.h" />
     <ClInclude Include="source\stdafx.h" />
+    <ClInclude Include="Source\UIMan.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
