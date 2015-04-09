@@ -18,7 +18,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 		return -1;
 	}
 
-	cudaGetDeviceCount(&g_cudaDeviceCount);
+	//cudaGetDeviceCount(&g_cudaDeviceCount);
 
 	AdjustWindowRect(&newRect, windowStyle, FALSE);
 
